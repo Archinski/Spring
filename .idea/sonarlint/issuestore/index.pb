@@ -15,3 +15,9 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 f
 6springspring/src/main/resources/application.properties,f\9\f93ca6d411fb7baeca5862b9f697ad0600dc1250
+z
+Jspringspring/src/main/java/com/skyproshka/springspring/CalcController.java,1\9\19d8a7c3bc55160b7de97d7df0b021329100c59e
+Ž
+^springspring/src/test/java/com/skyproshka/springspring/SpringspringspringApplicationTests.java,0\8\0887d9d31e27d462f03a319f9efc6fb6f34ac12d
+w
+Gspringspring/src/main/java/com/skyproshka/springspring/CalcService.java,3\4\344bde36199325c6d40b29a0a00ae0d6f55e987a
