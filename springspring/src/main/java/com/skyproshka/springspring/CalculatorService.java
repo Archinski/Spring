@@ -17,7 +17,7 @@ public class CalculatorService {
     }
 
     public static int getDiv(int num1, int num2) {
-        if (num2 == 0){
+        if (num2 == 0) {
             throw new IllegalArgumentException("На ноль не делим");
         }
         return num1 / num2;
