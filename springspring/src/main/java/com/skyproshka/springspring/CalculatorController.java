@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/calculator")
-public class CalcController {
-    private CalcService calcService;
+public class CalculatorController {
+    private final CalculatorService calculatorService;
 
-    public CalcController(com.skyproshka.springspring.CalcService calcService) {
-        this.calcService = calcService;
+    public CalculatorController(CalculatorService calculatorService) {
+        this.calculatorService = calculatorService;
     }
 
     @GetMapping()
@@ -25,7 +25,7 @@ public class CalcController {
         if (num1 == null || num2 == null) {
             return "Что то поломалось";
         }
-        int result = CalcService.getSum(num1, num2);
+        int result = CalculatorService.getSum(num1, num2);
         return num1 + " + " + num2 + " = " + result;
     }
 
@@ -35,7 +35,7 @@ public class CalcController {
         if (num1 == null || num2 == null) {
             return "Что то поломалось";
         }
-        int result = CalcService.getSub(num1, num2);
+        int result = CalculatorService.getSub(num1, num2);
         return num1 + " - " + num2 + " = " + result;
     }
 
@@ -45,7 +45,7 @@ public class CalcController {
         if (num1 == null || num2 == null) {
             return "Что то поломалось";
         }
-        int result = CalcService.getMult(num1, num2);
+        int result = CalculatorService.getMult(num1, num2);
         return num1 + " * " + num2 + " = " + result;
     }
 
@@ -55,10 +55,8 @@ public class CalcController {
         if (num1 == null || num2 == null) {
             return "Что то поломалось";
         }
-        if (num2 == 0){
-            return "Делить на ноль нельзя";
-        }
-        int result = CalcService.getDiv(num1, num2);
+
+        int result = CalculatorService.getDiv(num1, num2);
         return num1 + " / " + num2 + " = " + result;
     }
 }
